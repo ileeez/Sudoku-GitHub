@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="." />
+        <include domain="sharedpref" path="." />
+        <include domain="file" path="datastore" />
+        <!-- La chiave Gemini cifrata resta solo su questo dispositivo. -->
+        <exclude domain="file" path="datastore/sudoku_cat_secret.preferences_pb" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="." />
+        <include domain="file" path="datastore" />
+        <exclude domain="file" path="datastore/sudoku_cat_secret.preferences_pb" />
+    </device-transfer>
+</data-extraction-rules>

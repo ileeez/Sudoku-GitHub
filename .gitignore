@@ -1,0 +1,40 @@
+# Gradle / build
+.gradle/
+.kotlin/
+build/
+app/build/
+app/release/
+app/debug/
+local.properties
+
+# Segreti locali: non versionare mai chiavi o firme
+secrets.properties
+.env
+.env.*
+!.env.example
+keystore.properties
+keystore/
+*.jks
+*.keystore
+*.p12
+
+# APK/AAB generati: se compilati con la chiave, contengono il segreto
+*.apk
+*.aab
+
+# Eccezione: unico APK sicuro, compilato senza GEMINI_API_KEY
+!SudokuCat-1.1.1-release.apk
+
+dist/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Log e cache locali
+*.log
+captures/

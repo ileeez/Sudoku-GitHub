@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="database" path="." />
+    <include domain="sharedpref" path="." />
+    <include domain="file" path="datastore" />
+    <!-- La chiave Gemini cifrata resta solo su questo dispositivo. -->
+    <exclude domain="file" path="datastore/sudoku_cat_secret.preferences_pb" />
+</full-backup-content>
